@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- included Bootstrap4 css CDN -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Al's Ceasar Cipher</title>
+</head>
+<body>
+    <center><img src="CS.png" alt="logo"/></center>
+    <div class="container-fluid">
+        <div class="col">
+            <div class="row-6 py-2 bg-dark text-white" style="border-radius: 50px;">
+                <center>
+                    <h1>Encryption</h1>
+                    Plain Text<br>
+                    <textarea style="font-family: consolas" id="plainText" class="mb-2 bg-secondary text-white"></textarea>
+                    <br>
+                    <br>
+                    <button id="ebtn" class="btn btn-success my-4" type="button" onclick="encrypt()">Encrypt</button>
+                    <br>
+                    Cipher Text<br>
+                    <textarea disabled style="font-family: consolas" id="cipherText" class="bg-secondary text-white"></textarea>
+                </center>
+            </div>
+            <div class="row-6 my-3 py-2 bg-dark text-white" style="border-radius: 50px;">
+                <center>
+                    <h1>Decryption</h1>
+                    Cipher Text<br>
+                    <textarea style="font-family: consolas" id="textCipher" class="mb-2 bg-secondary text-white" ></textarea>
+                    <br>
+                    <br>
+                    <button id="dbtn" class="btn btn-danger my-4" type="button" onclick="decrypt()">Decrypt</button>
+                    <br>
+                    Plain Text<br>
+                    <textarea disabled style="font-family: consolas" id="textPlain" class="bg-secondary text-white"></textarea>
+                </center>
+            </div>
+        </div>
+    </div>
+    <script src="cipherScript.js"></script>
+</body>
+</html>
